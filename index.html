@@ -27,14 +27,76 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: QuickStart
-  * Template URL: https://bootstrapmade.com/quickstart-bootstrap-startup-website-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
+<style>
+
+
+  .testimonials {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .testimonials h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+  }
+
+  .testimonial-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 100px auto;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .testimonial-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .testimonial-card-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testimonial-card-content p {
+    color: #555;
+    font-size: 1rem;
+    margin: 0 0 10px;
+  }
+
+  .testimonial-card-content h3 {
+    margin: 0;
+    color: #333;
+    font-size: 1.1rem;
+  }
+
+  .testimonial-card-content h4 {
+    margin: 5px 0 0;
+    color: #777;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 768px) {
+    .testimonial-card {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    .testimonial-card img {
+      margin: 0 auto;
+    }
+  }
+</style>
 
 <body class="index-page">
 
@@ -826,124 +888,60 @@
     <section id="testimonials" class="testimonials section light-background">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+<center>
+        <h2>Testimonials</h2></center>
+       
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 1
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
+      <div class="testimonials">
+     
+    
+        <div class="testimonial-card">
+          <img src="assets/img/profile.webp" alt="Rubeena Muhammad">
+          <div class="testimonial-card-content">
+            <p>"തികച്ചും അപ്രതീക്ഷിതമായാണ് ഞാൻ വിൻബിൾ അക്കാദമിയുടെ അഞ്ച് ദിവസത്തെ CBT വർക്ഷോപ്പിൽ പങ്കെടുത്തത്. പഠിച്ചുവെച്ച തിയറിക്ക് അപ്പുറം പ്രാക്ടിക്കൽ ആയി എങ്ങനെ CBT അപ്ലൈ ചെയ്യാം എന്ന് മനസിലാക്കാൻ സാധിച്ചു."</p>
+            <h3>Rubeena Muhammad</h3>
+            <h4>Entrepreneur, Teacher & LD Trainer</h4>
           </div>
-          <div class="swiper-pagination"></div>
         </div>
+    
+        <div class="testimonial-card">
+          <img src="assets/img/profile.webp" alt="Baby Dhanya V">
+          <div class="testimonial-card-content">
+            <p>"The art therapy session by Varsha Ma’am was truly insightful and inspiring. Her depth of knowledge and passion for the subject made the concepts easy to understand and apply."</p>
+            <h3>Baby Dhanya V</h3>
+            <h4>Kalamassery</h4>
+          </div>
+        </div>
+    
+        <div class="testimonial-card">
+          <img src="assets/img/profile.webp" alt="Athikka Jasmin">
+          <div class="testimonial-card-content">
+            <p>"പ്രൊഫഷണൽ ട്രെയിനിംഗ് കോഴ്സ് എനിക്ക് വളരെ ഉപകാരമായിരുന്നു. സംസാരിക്കാൻ വളരെ ഇഷ്ടമുള്ള ആളായിരുന്നു. പക്ഷേ, പേടി കാരണം, എല്ലായിടത്തുനിന്നും എന്തെങ്കിലും പറഞ്ഞ് മുങ്ങലായിരുന്നു പതിവ്. കോഴ്സ് കഴിഞ്ഞപ്പോ അത് മാറി."</p>
+            <h3>Athikka Jasmin</h3>
+            <h4>Mind Tuning Practitioner, Nilambur</h4>
+          </div>
+        </div>
+    
+        <div class="testimonial-card">
+          <img src="assets/img/profile.webp" alt="Afna Adnan">
+          <div class="testimonial-card-content">
+            <p>"പ്രൊഫഷണൽ ട്രെയിനിംഗ് കോഴ്സിൽ ജോയിൻ ചെയ്യുമ്പോൾ ഞാൻ എന്താണ് പ്രതീക്ഷിച്ചു വന്നത്, അതിലേറെ എനിക്ക് ലഭിച്ചു. അത് അറ്റൻഡ് ചെയ്യാൻ വലിയ താത്പര്യം ആണ്."</p>
+            <h3>Afna Adnan</h3>
+            <h4>Teacher, Malappuram</h4>
+          </div>
+        </div>
+    
+        <div class="testimonial-card">
+          <img src="assets/img/profile.webp" alt="Ashna Sulfikker">
+          <div class="testimonial-card-content">
+            <p>"Pre & Post Marital Counselling ന്റെ ഓരോ സെഷനുകളും എനിക്ക് വ്യത്യസ്ത അനുഭവങ്ങൾ ആയിരുന്നു. വിവാഹത്തിന്റെ യാഥാർത്ഥ്യ ഉദ്ദേശവും മനസ്സിലാക്കി."</p>
+            <h3>Ashna Sulfikker</h3>
+            <h4>Mathilakam</h4>
+          </div>
+        </div>
+    
+      </div>
 
       </div>
 
